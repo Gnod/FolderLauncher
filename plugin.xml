@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="FolderLauncher.contribution"
+            objectClass="org.eclipse.core.runtime.IAdaptable">
+         <action
+               class="folderlauncher.popup.actions.FolderLauncherAction"
+               definitionId="FolderLauncher.command"
+               enablesFor="1"
+               id="FolderLauncher.newAction"
+               label="FolderLauncher"
+               menubarPath="FolderLauncher.menu">
+         </action>
+      </objectContribution>
+   </extension>
+   
+</plugin>
